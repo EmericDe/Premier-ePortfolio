@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+/* Mise en page de toutes les pages*/
+
+
+*{
+    border: 0;
+    outline: 0;
+    transition: all 0.5s;
+    box-sizing: border-box;
+
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif
+    
+
+}
+
+#globale {
+    width: 100%;
+    margin: 0 auto;
+  
+}
+
+
+a, a:hover {
+    text-decoration: none;
+}
+.container-fluid{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.btn-custom {
+    background-color: #2576E8;
+    color: #FFFFFF;
+    
+}
+.separator {
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: #2576E8;
+
+}
+
+/* Header */
+.header {
+    background-color: #2576E8;
+    height: 100px;
+    line-height: 70px;
+
+}
+.logo{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px; 
+    font-size: 26px;
+    position: absolute;
+    float: right;
+    text-shadow: 3px 3px 2px black;
+    
+}
+
+nav{
+   width: 50%;
+   position: absolute;
+   float: right;
+   top: 30px;
+   margin-left: 20%;
+}
+
+nav ul{
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    float: left;
+    width: 23%;
+    text-align: left;
+    position: relative;
+    
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    
+    text-decoration: none;
+    color:#FFFFFF;
+    margin-right: 20px;
+    padding: 0px 0px;
+    text-shadow: 3px 3px 3px black;
+}
+
+nav a:hover{
+    color:  #2C3E50;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 3px 3px #CCC;
+    background-color: #2576E8;
+    width: 100%;
+    height: 100%;
+
+    
+    
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+  font-size: 14px;
+  width: 100%;
+}
+.sous a{
+    border-bottom: none;
+    margin: 1px;
+    position: relative;
+    float: left;
+    text-align: left;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(10,10,10,0.1);
+}
+
+
+
+/* Bannière*/
+.banner {
+width: 100%;
+max-width: 100%;
+}
+.banner a{
+    font-size:10px;
+}
+.banner a:hover {
+    color: purple;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+}
+.inner-banner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.inner-banner h1{
+    color: #FFFFFF;
+    text-shadow: 3px 3px 30px #000000;
+    font-size: 32px;
+}
+
+
+
+/*A propos*/
+#pp {
+    text-align: center;
+    padding-top:2%;
+}
+.propos h2 {
+    text-align: center;
+    font-size: 36px;
+}
+.propos article {
+    margin-top: 3%;
+    margin: 4% 4% 4% 4%;
+    padding: 4% 4%;
+    border: solid black 1px;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0.1em;
+    box-shadow: 4px 4px 4px #aaa;
+    max-width: 60%;
+    left: 15%;
+
+}
+
+
+    
+.propos article img {
+    margin-left: 4%;
+    width: 20%;
+    border: solid 1px;
+    float:right;
+    
+}
+.propos h3 {
+    font-size: 28px;
+    color: #2576E8;
+}
+.propos p{
+    font-size: 20px;
+}
+/*Contact*/
+.footer {
+    background-color: #2C3E50;
+    height: 700px;
+    margin-top: 10%;
+}
+.footer p{
+    color:#FFFFFF;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+}
+#cont {
+    color:#FFFFFF;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    padding-top: 2%;
+
+  
+}
+/* Formulaire en pied de page*/
+.formulaire{
+    width: 500px;
+    display: block;
+    margin-top: 16%;
+    position: relative;
+    left: 20%;
+    
+}
+input[type=text] {
+    height: 30px;
+    width: 500px;
+    border: none;
+    
+}
+input {
+    margin-bottom: 20px;
+}
+input[type=email] {
+    height: 30px;
+    width: 500px;
+    border: none;
+    
+}
+textarea {
+    width: 500px;
+    height: 200px;
+    resize: vertical;
+}
+
+/* Structuration des articles de la page compétences*/
+.maitrise article {
+    border-right: solid;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    margin: 4% 4% 0% 4%;
+    padding: 2% 2%;
+    border: solid black 1px;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0.1em;
+    box-shadow: 4px 4px 4px #aaa;
+    max-width: 80%;
+    left:4%;
+}
+
+.maitrise article h2 {
+    text-align: center;
+    font-size: 26px;
+    padding-top: 2%;
+    color: #2576E8;
+    text-decoration: underline;
+
+}
+.maitrise article p {
+    padding-top: 4%;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 2%;
+}
+
+.site img {
+    width:100%;
+    max-width:100%;
+    margin: 1% auto;
+}
+.site h2{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 3%;
+    color: #2576E8;
+    text-decoration: underline;
+}
+.site p{
+
+    text-align: left;
+    font-size: 18px;
+    padding-left: 2%;
+}
+.site article{
+    border-right: solid;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    margin: 4% 4% 4% 4%;
+    padding: 2% 2% 10;;
+    border: solid black 1px;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0.1em;
+    box-shadow: 4px 4px 4px #aaa;
+    max-width: 80%;
+    left: 4%;
+}
+
+/* Structuration des articles de la page expériences*/
+.experience h2{
+    position: absolute;
+    left: 40%;
+    text-decoration: underline;
+    color: #2576E8;
+    padding-bottom: 2%;
+}
+
+.experience article{
+    text-align: center;
+    font-size: 30px;
+    margin: 6% 4% 4% 4%;
+    padding: 4% 4%;
+    border: solid black 1px;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0.1em;
+    box-shadow: 4px 4px 4px #aaa;
+    max-width: 60%;
+    left: 15%;
+}
+
+
+.experience article h3 {
+    text-align: left;
+    font-size: 24px;
+    color: #2576E8;
+}
+.experience article p{
+    font-size: 16px;
+    text-align:left;
+}
+.experience article img {
+    width:100%;
+    max-width: 100%;
+    border: solid;
+
+}
+
+/* Structuration des articles de la page loisirs*/
+.loisir {
+    padding-top: 5%;
+}
+
+.loisir article img{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: solid;
+}
+.loisir article h2{
+    color: #2576E8;
+    text-decoration: underline;
+    padding-bottom: 3%;
+    text-align:center;
+}
+.loisir article h3 {
+    font-size: 24px;
+}
+.loisir article p{
+    font-size: 20px;
+
+}
+ .inner-loisir h1{
+    color:white;
+    text-shadow: 3px 3px 2px #000000;
+    text-align:left;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+.extra {
+    margin-top: 2%;
+}
+
+.extra h3{
+    font-size: 24px;
+    text-align:left;
+    color: #2576E8;
+    text-decoration: underline;
+}
+.extra p{
+    font-size:18px;
+}
+
+/* Tableau*/
+#sailorTableArea{
+    max-height: 300px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+#sailorTable{
+    white-space: normal;
+}
+tbody {
+    display:block;
+    height:200px;
+    overflow:auto;
+}
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+/*Article avec audio*/
+.piste {
+    margin-top: 3%;
+    padding: 4% 4%;
+    border: solid black 1px;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0.1em;
+    box-shadow: 4px 4px 4px #aaa;
+    max-width: 60%;
+    left: 15%;
+    margin: 0 auto;
+}
+.piste h1{
+    background: #EEEEEE;
+    padding: 3%;
+    padding-left: 10%;
+    font-size: 24px;
+    text-align: center;
+}
+.piste p {
+    padding: 3%;
+    font-size: 20px;
+}
+.piste audio{
+    margin: 2%;
+    max-width: 90%;
+}
+
